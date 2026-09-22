@@ -1,0 +1,46 @@
+# Build results
+target/
+build/
+out/
+
+# IntelliJ IDEA / VS Code / Eclipse
+.idea/
+*.iml
+*.iws
+.vscode/
+*.code-workspace
+.classpath
+.project
+.settings/
+
+# Local scripts (chạy máy cá nhân, không đưa lên repo)
+*.bat
+*.sh
+
+# Tài liệu cá nhân / checklist (giữ Google Docs, không commit)
+docs/
+
+# JetBrains Rider (nếu có mở lại bằng Rider)
+*.sln.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Secrets / Configuration overrides
+.env
+*.local.json
+/artifacts/
+
+# Spring Boot application configs (chứa secret thật — password DB, JWT secret...)
+**/application.yml
+**/application.properties
+**/application-local.yml
+**/application-local.properties
+**/application-dev.yml
+!**/application.yml.example
+!**/application-example.yml
+!**/application.properties.example
+
+.build-temp/
