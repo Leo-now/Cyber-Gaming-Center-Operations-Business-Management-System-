@@ -26,7 +26,7 @@ Lập trình viên **bắt buộc** phải viết mã nguồn đúng layer và �
 
 * **Tầng Entity (`entity/`)**:
 
-  * *Viết gì ở đây:* Các Entity JPA ánh xạ với bảng trong `Database/schema.sql`.
+  * ** Các Entity JPA ánh xạ với bảng trong `Database/schema.sql`.
   * *Quy tắc:* Không chứa business logic.
 
 * **Tầng Repository (`repository/`)**:
@@ -36,17 +36,17 @@ Lập trình viên **bắt buộc** phải viết mã nguồn đúng layer và �
 
 * **Tầng DTO (`dto/<feature>/`)**:
 
-  * *Viết gì ở đây:* Các Request/Response DTO dùng để truyền dữ liệu giữa Controller và Service.
+  * ** Các Request/Response DTO dùng để truyền dữ liệu giữa Controller và Service.
   * *Quy tắc:* DTO phải tách biệt khỏi Entity. Controller không được trả Entity trực tiếp ra ngoài.
 
 * **Tầng Service (`service/<feature>/`)**:
 
-  * *Viết gì ở đây:* Toàn bộ business logic của hệ thống như tính tiền phiên chơi, xử lý Order, Wallet và xác nhận thanh toán.
+  * ** Toàn bộ business logic của hệ thống như tính tiền phiên chơi, xử lý Order, Wallet và xác nhận thanh toán.
   * *Quy tắc:* Các quy tắc nghiệp vụ phải được kiểm tra và xử lý tại đây.
 
 * **Tầng Controller (`controller/<feature>/`)**:
 
-  * *Viết gì ở đây:* Tiếp nhận HTTP request, gọi Service và trả response.
+  * ** Tiếp nhận HTTP request, gọi Service và trả response.
   * *Quy tắc:* Controller phải giữ mỏng, không chứa business logic.
 
 ### 2.2. Quy tắc tổ chức Code theo thư mục tính năng (Feature Folders)
